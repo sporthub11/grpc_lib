@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package user;
+option go_package = "github.com/sporthub11/grpc_lib/pb";
+
+import "google/protobuf/timestamp.proto";
+
+message UserProfile {
+  bytes id = 1;
+  bytes user_id = 2;
+  string location = 3;
+  google.protobuf.Timestamp birth_day = 4;
+  string email = 5;
+  string name = 6;
+  string picture = 7;
+  string country_code = 8;
+  string phone_number = 9;
+  string bio = 10;
+  bool is_finished_onboarding = 11;
+  google.protobuf.Timestamp created_at = 12;
+  google.protobuf.Timestamp updated_at = 13;
+}
+
+message AuthorizeUserRequest {
+  string user_id = 1;
+}
+
+message AuthorizeUserResponse {
+  UserProfile profile = 1;
+  string error = 2;
+}
+
+service UserService {
+  rpc AuthorizeUser(AuthorizeUserRequest) returns (AuthorizeUserResponse);
+}
