@@ -1,6 +1,7 @@
 syntax = "proto3";
 
-package user;
+package user_profile.v1;
+
 option go_package = "github.com/sporthub11/grpc_lib/pb";
 
 import "google/protobuf/timestamp.proto";
@@ -21,15 +22,15 @@ message UserProfile {
   google.protobuf.Timestamp updated_at = 13;
 }
 
-message AuthorizeUserRequest {
+message GetUserProfileRequest {
   string user_id = 1;
 }
 
-message AuthorizeUserResponse {
+message GetUserProfileResponse {
   UserProfile profile = 1;
   string error = 2;
 }
 
 service UserService {
-  rpc AuthorizeUser(AuthorizeUserRequest) returns (AuthorizeUserResponse);
+  rpc GetUserProfile(GetUserProfileRequest) returns (GetUserProfileResponse);
 }
