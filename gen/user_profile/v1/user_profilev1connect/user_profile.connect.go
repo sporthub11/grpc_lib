@@ -8,7 +8,7 @@ import (
 	connect "connectrpc.com/connect"
 	context "context"
 	errors "errors"
-	v1 "example/gen/user_profile/v1"
+	v1 "github.com/sporthub11/grpc_lib/gen/user_profile/v1"
 	http "net/http"
 	strings "strings"
 )

@@ -286,8 +286,8 @@ const file_user_profile_v1_user_profile_proto_rawDesc = "" +
 	"\aprofile\x18\x01 \x01(\v2\x1c.user_profile.v1.UserProfileR\aprofile\x12\x14\n" +
 	"\x05error\x18\x02 \x01(\tR\x05error2p\n" +
 	"\vUserService\x12a\n" +
-	"\x0eGetUserProfile\x12&.user_profile.v1.GetUserProfileRequest\x1a'.user_profile.v1.GetUserProfileResponseB\xac\x01\n" +
-	"\x13com.user_profile.v1B\x10UserProfileProtoP\x01Z*example/gen/user_profile/v1;user_profilev1\xa2\x02\x03UXX\xaa\x02\x0eUserProfile.V1\xca\x02\x0eUserProfile\\V1\xe2\x02\x1aUserProfile\\V1\\GPBMetadata\xea\x02\x0fUserProfile::V1b\x06proto3"
+	"\x0eGetUserProfile\x12&.user_profile.v1.GetUserProfileRequest\x1a'.user_profile.v1.GetUserProfileResponseB\xc3\x01\n" +
+	"\x13com.user_profile.v1B\x10UserProfileProtoP\x01ZAgithub.com/sporthub11/grpc_lib/gen/user_profile/v1;user_profilev1\xa2\x02\x03UXX\xaa\x02\x0eUserProfile.V1\xca\x02\x0eUserProfile\\V1\xe2\x02\x1aUserProfile\\V1\\GPBMetadata\xea\x02\x0fUserProfile::V1b\x06proto3"
 
 var (
 	file_user_profile_v1_user_profile_proto_rawDescOnce sync.Once
